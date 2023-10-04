@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "2cf9c4bb-1088-42a3-a42c-b423d710b57d",
+    "name": "Refitter",
+    "friendlyName": "Refitter",
+    "description": "Refit API Client Generator",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Christian Resma Helle",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Echo $(samplestring)",
+    "inputs": [
+        {
+            "name": "samplestring",
+            "type": "string",
+            "label": "Sample String",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "A sample string"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    }
+    }
