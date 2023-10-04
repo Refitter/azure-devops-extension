@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "azure-pipelines-task-lib": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "@types/q": "^1.5.6"
   }
 }
