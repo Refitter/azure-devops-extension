@@ -10,7 +10,7 @@ async function run() {
         console.log('Hello', inputString);
     }
     catch (err) {
-        tl.setResult(tl.TaskResult.Failed, err.message);
+        tl.setResult(tl.TaskResult.Failed, (err as Error).message);
     }
 }
 
